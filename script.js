@@ -15,37 +15,61 @@ document.getElementById('priceForm').addEventListener('submit', function(event) 
     // Definir precios basados en la cantidad total de unidades
     let precioPomadasMate, precioPomadasBrillantes, precioPolvosTexturizadores, precioAfterShave, precioAceitesDeBarba;
 
-    if (totalUnidades >= 150) {
-        precioPomadasMate = 2500;
-        precioPomadasBrillantes = 2500;
-        precioPolvosTexturizadores = 2000;
-        precioAfterShave = 2000;
-        precioAceitesDeBarba = 2000;
-    } else if (totalUnidades >= 70) {
-        precioPomadasMate = 2550;
-        precioPomadasBrillantes = 2550;
-        precioPolvosTexturizadores = 2050;
-        precioAfterShave = 2050;
-        precioAceitesDeBarba = 2050;
-    } else if (totalUnidades >= 30) {
-        precioPomadasMate = 2650;
-        precioPomadasBrillantes = 2650;
-        precioPolvosTexturizadores = 2150;
-        precioAfterShave = 2150;
-        precioAceitesDeBarba = 2150;
-    } else if (totalUnidades >= 15) {
-        precioPomadasMate = 2790;
-        precioPomadasBrillantes = 2790;
-        precioPolvosTexturizadores = 2290;
-        precioAfterShave = 2290;
-        precioAceitesDeBarba = 2290;
-    } else {
-        precioPomadasMate = 0;
-        precioPomadasBrillantes = 0;
-        precioPolvosTexturizadores = 0;
-        precioAfterShave = 0;
-        precioAceitesDeBarba = 0;
-    }
+   if (totalUnidades >= 2000) {
+    precioPomadasMate = 2300;
+    precioPomadasBrillantes = 2300;
+    precioPolvosTexturizadores = 1800;
+    precioAfterShave = 1800;
+    precioAceitesDeBarba = 1800;
+} else if (totalUnidades >= 1000) {
+    precioPomadasMate = 2350;
+    precioPomadasBrillantes = 2350;
+    precioPolvosTexturizadores = 1850;
+    precioAfterShave = 1850;
+    precioAceitesDeBarba = 1850;
+} else if (totalUnidades >= 500) {
+    precioPomadasMate = 2400;
+    precioPomadasBrillantes = 2400;
+    precioPolvosTexturizadores = 1900;
+    precioAfterShave = 1900;
+    precioAceitesDeBarba = 1900;
+} else if (totalUnidades >= 300) {
+    precioPomadasMate = 2450;
+    precioPomadasBrillantes = 2450;
+    precioPolvosTexturizadores = 1950;
+    precioAfterShave = 1950;
+    precioAceitesDeBarba = 1950;
+} else if (totalUnidades >= 150) {
+    precioPomadasMate = 2500;
+    precioPomadasBrillantes = 2500;
+    precioPolvosTexturizadores = 2000;
+    precioAfterShave = 2000;
+    precioAceitesDeBarba = 2000;
+} else if (totalUnidades >= 70) {
+    precioPomadasMate = 2550;
+    precioPomadasBrillantes = 2550;
+    precioPolvosTexturizadores = 2050;
+    precioAfterShave = 2050;
+    precioAceitesDeBarba = 2050;
+} else if (totalUnidades >= 30) {
+    precioPomadasMate = 2650;
+    precioPomadasBrillantes = 2650;
+    precioPolvosTexturizadores = 2150;
+    precioAfterShave = 2150;
+    precioAceitesDeBarba = 2150;
+} else if (totalUnidades >= 15) {
+    precioPomadasMate = 2790;
+    precioPomadasBrillantes = 2790;
+    precioPolvosTexturizadores = 2290;
+    precioAfterShave = 2290;
+    precioAceitesDeBarba = 2290;
+} else {
+    precioPomadasMate = 0;
+    precioPomadasBrillantes = 0;
+    precioPolvosTexturizadores = 0;
+    precioAfterShave = 0;
+    precioAceitesDeBarba = 0;
+}
 
     // Calcular subtotales
     const subtotalPomadasMate = pomadasMate * precioPomadasMate;
