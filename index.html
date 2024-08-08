@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Precios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Precios de Productos</h1>
+        <form id="priceForm">
+            <div class="form-group">
+                <label for="pomadasMate">Pomadas Mate:</label>
+                <input type="number" id="pomadasMate" value="0" min="0">
+            </div>
+            <div class="form-group">
+                <label for="pomadasBrillantes">Pomadas Brillantes:</label>
+                <input type="number" id="pomadasBrillantes" value="0" min="0">
+            </div>
+            <div class="form-group">
+                <label for="polvosTexturizadores">Polvos Texturizadores:</label>
+                <input type="number" id="polvosTexturizadores" value="0" min="0">
+            </div>
+            <div class="form-group">
+                <label for="afterShave">After Shave:</label>
+                <input type="number" id="afterShave" value="0" min="0">
+            </div>
+            <div class="form-group">
+                <label for="aceitesDeBarba">Aceites de Barba:</label>
+                <input type="number" id="aceitesDeBarba" value="0" min="0">
+            </div>
+            <div class="form-group">
+                <label for="envio">Costo de Envío:</label>
+                <input type="number" id="envio" value="0" min="0">
+            </div>
+            <button type="submit">Calcular Total</button>
+        </form>
+        <div class="result">
+            <h2>Resultado del Pedido</h2>
+            <pre id="resultText"></pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
